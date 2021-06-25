@@ -16,6 +16,7 @@ REST API를 활용하여 Tizen에서 취득한 센서 정보를 Atelier AI Platf
 
 문자열 데이터 반환 : OK! I got it. 
 
+<br>
 
 ## Topic 2 : 이미지 데이터 학습 및 판단과 판단 결과에 따른 이미지 분류 모델을 이용한 이미지 분류 결과 서빙
 
