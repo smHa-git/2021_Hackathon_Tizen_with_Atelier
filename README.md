@@ -2,7 +2,7 @@
 
 ## Topic 1 : DL 모델을 활용한 센서 정보 결과 예측
 
-###설명 :
+### 설명 :
 REST API를 활용하여 Tizen에서 취득한 센서 정보를 Atelier AI Platform으로 전송 및 예측결과 수신합니다.
 또한, Atelier AI Platform을 활용하여 수신된 센서 정보를 MongoDB에 저장, 가공을 통해 학습 데이터 생성 및 DL 학습을 통한 예측 결과를 도출합니다.
 
@@ -14,12 +14,12 @@ REST API를 활용하여 Tizen에서 취득한 센서 정보를 Atelier AI Platf
 
 ### Topic 1 샘플 코드 반환 값 :
 
-문자열 반환 : OK! I got it. 
+문자열 데이터 반환 : OK! I got it. 
 
 
 ## Topic 2 : 이미지 데이터 학습 및 판단과 판단 결과에 따른 이미지 분류 모델을 이용한 이미지 분류 결과 서빙
 
-###설명 : 
+### 설명 : 
 레이블링된 이미지 데이터를 활용하여 판단 및 분류 결과를 위한 이미지 데이터를 학습합니다.
 REST API를 활용하여 Tizen에서 이미지 데이터를 Atelier AI Platform으로 전송하여 이미지의 판단 결과와 이미지 분류 모델을 이용한 판단 결과에 따른 이미지 분류 결과를 도출합니다.
 
@@ -30,17 +30,12 @@ REST API를 활용하여 Tizen에서 이미지 데이터를 Atelier AI Platform�
 
 ### Topic 2 샘플 코드 반환 값 :
 
-JSON 데이터 반환 : 
+JSON 데이터 반환 : 점수 가 높은 순서로 5개의 분류 카테고리를 알려줍니다.
 
-점수 가 높은 순서로 5개의 분류 카테고리를 알려줍니다.
+- floatVal : 이미지 판별 점수 값, 
+- stringVal : 이미지 판별 점수에 따른 문자열
 
-floatVal : 이미지 판별 점수 값, 
-
-stringVal : 이미지 판별 점수에 따른 문자열
-
-JSON 데이터 :
-
-결과 데이터는 샘플코드의 "giantPanda.jpeg" 이미지를 판별 및 분류한 결과 값입니다.
+JSON 데이터 : 결과 데이터는 샘플코드의 "giantPanda.jpeg" 이미지를 판별 및 분류한 결과 값입니다.
 
 {
     "outputs": {
